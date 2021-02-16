@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'circulating-supply
+
+  Sample SAM Template for circulating-supply
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  CirculatingSupplyFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: CirculatingSupplyFunction
+      Handler: app.lambdaHandler
+      Runtime: nodejs14.x
+      Events:
+        CirculatingSupply:
+          Type: Api
+          Properties:
+            Path: /circulating
+            Method: get
+Outputs:
+  CirculatingSupplyApi:
+    Description: API Gateway endpoint URL for Prod stage for Circulating Supply function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/circulating/
+  CirculatingSupplyFunction:
+    Description: Circulating Supply Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - CirculatingSupplyFunction
+      - Arn
+  CirculatingSupplyFunctionIamRole:
+    Description: Implicit IAM Role created for Circulating Supply function
+    Value:
+      Fn::GetAtt:
+      - CirculatingSupplyFunctionRole
+      - Arn

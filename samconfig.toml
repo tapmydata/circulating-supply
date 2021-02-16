@@ -1,0 +1,9 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "circulating-supply"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-fijslv0fdqw5"
+s3_prefix = "circulating-supply"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
