@@ -5,6 +5,9 @@ let infura = "https://mainnet.infura.io/v3/aa5206162f4c4054b23539aa8dd1ae0f";
 let tokenAddress = "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d";
 let wallets = [
     "0x4ee50ebf6cbc74eb40fa3bea97d0ba629ea8296f", // Reserve
+    "0x902c72c925d84087fa4af974624bb831abf9e12b", // Reserve
+    "0x7429f5bc84a2b473ad2f6abd13399014bf60e9cb", // Reserve
+    "0xdbf72370021babafbceb05ab10f99ad275c6220a", // TrustSwap lock
     "0xcb0510d1c4ea88ccd1f2395d075af9e831c2f15d", // Deployer
     "0x57bbef693c457609de02db7e9ea541e6288afbd9", // Giveaway
     "0x86B738d26D791C76411bd32935416a5A37078ABD" // Swap
