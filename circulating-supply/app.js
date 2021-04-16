@@ -10,7 +10,10 @@ let wallets = [
     "0xdbf72370021babafbceb05ab10f99ad275c6220a", // TrustSwap lock
     "0xcb0510d1c4ea88ccd1f2395d075af9e831c2f15d", // Deployer
     "0x57bbef693c457609de02db7e9ea541e6288afbd9", // Giveaway
-    "0x86B738d26D791C76411bd32935416a5A37078ABD" // Swap
+    "0x86B738d26D791C76411bd32935416a5A37078ABD", // Swap
+    "0x13eaa8e6da06053c3cd609e179bee237c8cc100c", // LP Staking Factory,
+    "0x29Da98679d401ED8FC7474D192c04DB3e3c49695", // TAP-ETH LP Reward pool
+    "0x60b07E2432e4cD572C157C121a810BfcA517C79f"  // TAP-USDT LP Reward pool
 ];
 
 let response;
